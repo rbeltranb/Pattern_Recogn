@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+Test_PR/NonPedestrians/.DS_Store
+Test_PR/Pedestrians/.DS_Store
+Test_PR/.DS_Store
+.DS_Store

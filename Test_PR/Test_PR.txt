@@ -1,0 +1,19 @@
+
+./Test1 -weka /Volumes/USB/TrainingData/Pedestrians/18x36 1 GreySc
+
+
+./Test1 -training Weka weka_correlationAttributeEval_18x36_GreySc.txt 0.4 /Volumes/USB/TrainingData/NonPedestrians/18x36 0 GreySc
+
+
+./Test1 -classify Pedestrians/18x36 NonPedestrians/18x36 meanMatrix_18x36_c1_GreySc_weka.xml covarianceMatrix_18x36_c1_GreySc_weka.xml Weka weka_correlationAttributeEval_18x36_GreySc.txt 0.4 100 GreySc Multi
+
+./Test1 -discrimins Pedestrians/18x36 NonPedestrians/18x36 meanMatrix_18x36_c1_GreySc_all.xml covarianceMatrix_18x36_c1_GreySc_all.xml GreySc Multi
+
+./Test1 -discrimins Pedestrians/18x36 NonPedestrians/18x36 meanMatrix_18x36_c1_GreySc_all.xml covarianceDiag_18x36_c1_GreySc_all.xml GreySc Mono
+
+
+./Test1 -classify Pedestrians/18x36 NonPedestrians/18x36 meanMatrix_18x36_c1_HOG-2_all.xml covarianceMatrix_18x36_c1_HOG-2_all.xml 0.9 100 HOG Multi
+
+./Test1 -discrimins Pedestrians/18x36 NonPedestrians/18x36 meanMatrix_18x36_c1_HOG-2_all.xml covarianceMatrix_18x36_c1_HOG-2_all.xml GreySc Multi
+
+./Test1 -discrimins Pedestrians/18x36 NonPedestrians/18x36 meanMatrix_18x36_c1_HOG-2_all.xml covarianceDiag_18x36_c1_HOG-2_all.xml GreySc Mono
