@@ -8,7 +8,7 @@
  * such images.
  *
  * Developed by:
- * Raul Beltrán B.	Cod. 447953
+ * Raul Beltrán B.
  *
  **/
 #include "trainergreysc.hpp"
