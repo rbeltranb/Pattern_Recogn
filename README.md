@@ -6,7 +6,9 @@ Using basic algorithms of image processing to detect pedestrian in greyscale ima
 
 So, a Bayesian classifier with Gaussian distribution hypothesis based on the detector approach is implemented. As feature vector characteristic is possible use the greyscale values of the image, as well the Histogram of Oriented Gradients (HOG).
 
-The results for detection and false alarm for different threshold values *T_i = i\*d_max/n* for both characteristics. The calculated decision function is tested with the images from the training and testing dataset and a transition matrix is created. (The images for training and testing are from the Daimler Pedestrian Detection Benchmark)
+The results for detection and false alarm for different threshold values *T_i = i\*d_max/n* for both characteristics. The calculated decision function is tested with the images from the training and testing dataset and a transition matrix is created. (The images for training and testing are from the Daimler Pedestrian Detection Benchmark.)
+
+![Animation](Threshold_animation.gif?raw=true "Threshold animation.")
 
 ## --
 
